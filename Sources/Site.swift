@@ -15,15 +15,20 @@ struct IgniteWebsite {
 }
 
 struct ExampleSite: Site {
-    var name = "Hello World"
-    var titleSuffix = " – My Awesome Site"
+    var name = "Kanagawa.swift"
+    var titleSuffix = " – Swift Local Events in Kanagawa"
     var url = URL(string: "https://u5-03.github.io/kanagawa-swift/")!
     var builtInIconsEnabled = true
+    var pageWidth = 12
+    var favicon = URL(string: "/images/favicon.png")
+    var author = "Kanagawa.swift organization"
 
-    var author = "John Appleseed"
-
-    var homePage = Home()
+    var homePage = Jp()
     var theme = MyTheme()
+    var pages: [any StaticPage] {
+        Jp()
+        En()
+    }
 }
 
 

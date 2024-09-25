@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:kanagawa-swift}",
+            "name": "Debug IgniteStarter",
+            "program": "${workspaceFolder:kanagawa-swift}/.build/debug/IgniteStarter",
+            "preLaunchTask": "swift: Build Debug IgniteStarter"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:kanagawa-swift}",
+            "name": "Release IgniteStarter",
+            "program": "${workspaceFolder:kanagawa-swift}/.build/release/IgniteStarter",
+            "preLaunchTask": "swift: Build Release IgniteStarter"
+        }
+    ]
+}
