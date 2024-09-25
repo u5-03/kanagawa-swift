@@ -13,8 +13,8 @@ struct OrganizerListComponent: Component {
                 Text() {
                     Link(target: member.link.absoluteString) {
                         Image(member.imageFilePath)
-                            // .resizable()
-                            // .width(4)
+                            .resizable()
+                            .width(3)
                             .margin(.bottom)
                     }
                     Link(target: member.link.absoluteString) {
