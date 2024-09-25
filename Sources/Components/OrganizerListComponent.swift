@@ -14,9 +14,11 @@ struct OrganizerListComponent: Component {
                     Link(target: member.link.absoluteString) {
                         Image(member.imageFilePath)
                             .resizable()
-                            .width(2)
+                            .width(3)
                             .aspectRatio(1)
                             .margin(.bottom)
+                    }
+                    Link(target: member.link.absoluteString) {
                         Text("@\(member.name)")
                             .font(.title5)
                             .margin(.none)
