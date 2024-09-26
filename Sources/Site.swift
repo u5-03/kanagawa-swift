@@ -4,7 +4,7 @@ import Ignite
 @main
 struct IgniteWebsite {
     static func main() async {
-        let site = ExampleSite()
+        let site = KanagawaSwiftSite()
 
         do {
             try await site.publish()
@@ -14,10 +14,10 @@ struct IgniteWebsite {
     }
 }
 
-struct ExampleSite: Site {
+struct KanagawaSwiftSite: Site {
     var name = "Kanagawa.swift"
-    var titleSuffix = " – Swift Local Events in Kanagawa"
     var url = URL(string: "https://u5-03.github.io/kanagawa-swift/")!
+    var titleSuffix = " – Swift Region Events in Kanagawa"
     var builtInIconsEnabled = true
     var pageWidth = 12
     var favicon = URL(string: "/images/favicon.png")
@@ -30,5 +30,3 @@ struct ExampleSite: Site {
         En()
     }
 }
-
-

@@ -11,8 +11,9 @@ struct MyTheme: Theme {
 
                 IgniteFooter()
             }
-            .padding(.top, 80)
             .style("background-color: \(ColorAssets.background.rawValue)")
+            .padding(.top, 80)
+            .padding(.horizontal, 24)
         }
     }
 }

@@ -10,21 +10,22 @@ struct OrganizerListComponent: Component {
             .id(NavigationOptions.staff.rawValue)
         Section {
             for member in OrganizerList.members {
-                Text() {
+                Group() {
                     Link(target: member.link.absoluteString) {
                         Image(member.imageFilePath)
                             .resizable()
-                            .width(3)
-                            .margin(.bottom)
+                            .aspectRatio(1)
                     }
                     Link(target: member.link.absoluteString) {
                         Text("@\(member.name)")
                             .font(.title5)
                             .margin(.none)
                             .foregroundStyle(.primaryColor)
-                            .position(Position.stickyTop)
                     }
                 }
+                .width(2)
+                .horizontalAlignment(.center)
+                .margin(.bottom, 12)
             }
         }
     }

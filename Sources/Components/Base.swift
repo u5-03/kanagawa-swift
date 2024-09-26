@@ -6,30 +6,24 @@ func base(context: PublishingContext, language: LanguageType ) ->  Group {
     return Group {
         if let model {
             NavBar(model: model, language: language)
-            Carousel {
-                Slide(background: "/images/photos/kanagawa.jpeg")
-                Slide(background: "/images/photos/yokohama_sea.jpeg")
-                Slide(background: "/images/photos/castle.jpeg")
-                Slide(background: "/images/photos/matcha.jpeg")
-                Slide(background: "/images/photos/train.jpeg")
-                Slide(background: "/images/photos/yokohama_night.jpeg")
-                Slide(background: "/images/photos/enoshima_sunset.jpeg")
-                Slide(background: "/images/photos/yokohama_sea.jpeg")
-                Slide(background: "/images/photos/ashinoko.jpeg")
+            PhotoCarouselComponent()
+            Group {
+                Spacer()
+                    .frame(height: 32)
+                Text(model.home.title)
+                    .font(.title2)
+                Divider()
+                Text(model.home.description)
+                    .font(.title4)
+                Divider()
+                OrganizerListComponent(navbar: model.navBar)
+                Divider()
+                BlogsComponent(navbar: model.navBar)
+                Divider()
+                RegionSwiftComponent()
             }
-            .carouselStyle(.crossfade)
-            Spacer()
-                .frame(height: 32)
-            Text(model.home.title)
-                .font(.title2)
-            Divider()
-            Text(model.home.description)
-                .font(.title4)
-            Divider()
-            OrganizerListComponent(navbar: model.navBar)
+            .padding(.top, 80)
+            .padding(.medium)
         }
     }
-    .position(.stickyTop)
-    .padding(32)
-    .margin()
 }
