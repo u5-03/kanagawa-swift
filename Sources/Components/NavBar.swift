@@ -23,10 +23,15 @@ struct NavBar: Component {
     }
 
     private var logo: any InlineElement {
-        Text(model.name)
-            .fontWeight(.bold)
-            .margin(.none)
-            .font(.title4)
-            .foregroundStyle(.primaryColor)
+        Text {
+            Image("images/favicon.png")
+                .resizable()
+                .frame(width: 32, height: 32)
+            Text(model.name)
+                .fontWeight(.bold)
+                .margin(.none)
+                .font(.title4)
+                .foregroundStyle(.primaryColor)
+        }
     }
 }
