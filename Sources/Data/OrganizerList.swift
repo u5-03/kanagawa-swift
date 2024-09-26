@@ -2,7 +2,7 @@ import Foundation
 
 enum OrganizerList {
     static let members: [OrganizerMember] = [
-        OrganizerMember(name: "Ryomu", imageFilePath: "/images/icons/ryomu.jpeg", link: URL(string: "https://x.com/__ryomm")!),
+        OrganizerMember(name: "Ryomm", imageFilePath: "/images/icons/ryomm.jpeg", link: URL(string: "https://x.com/__ryomm")!),
         OrganizerMember(name: "Sugiy", imageFilePath: "/images/icons/sugiy.jpeg", link: URL(string: "https://x.com/u5_03")!),
         OrganizerMember(name: "tockrock", imageFilePath: "/images/icons/tockrock.jpeg", link: URL(string: "https://x.com/tockrock")!),
         OrganizerMember(name: "とんとんぼ", imageFilePath: "/images/icons/tontonbo.jpeg", link: URL(string: "https://x.com/Ktombow1110")!),
