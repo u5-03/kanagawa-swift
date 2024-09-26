@@ -1,11 +1,14 @@
 {
     "name": "kanagawa.swift",
-    "language": "English",
+    "language": "日本語",
     "navBar": {
         "organizer": "Organizer"
     },
     "home": {
-        "title": "Welcome to Kanawaga.swift！",
-        "description": "Kanagawa.swift is a study group founded with the concept of bringing together app developers connected to Kanagawa prefecture. While it is aimed at those who live, work, or have an interest in Kanagawa prefecture, anyone can join as long as they claim some kind of connection to the area, even if there isn’t a real one!"
+        "title": "Welcome to Kanagawa.swift！",
+        "description": "Kanagawa.swift is a study group founded with the concept of bringing together app developers connected to Kanagawa prefecture. While it is aimed at those who live, work, or have an interest in Kanagawa prefecture, anyone can join as long as they claim some kind of connection to the area!"
+    },
+    "event": {
+        "title": "Events"
     }
 }

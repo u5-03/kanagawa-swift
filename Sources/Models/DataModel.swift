@@ -5,6 +5,7 @@ struct KanagawaSwiftModel: Decodable {
     let language: String
     let navBar: NavBarModel
     let home: HomeModel
+    let event: EventModel
 }
 
 struct NavBarModel: Decodable {
@@ -14,4 +15,8 @@ struct NavBarModel: Decodable {
 struct HomeModel: Decodable {
     let title: String
     let description: String
+}
+
+struct EventModel: Decodable {
+    let title: String
 }

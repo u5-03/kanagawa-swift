@@ -7,7 +7,7 @@ struct RegionSwiftComponent: Component {
             .font(.title2)
             .id(NavigationOptions.regionSwift.rawValue)
         Group {
-            for region in RegionSwiftList.members {
+            for region in RegionSwiftList.regions {
                     Link(target: region.link.absoluteString) {
                         Text(region.name)
                             .font(.title4)

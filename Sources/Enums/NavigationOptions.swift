@@ -3,6 +3,7 @@ import Ignite
 
 enum NavigationOptions: String, CaseIterable {
     case connpass
+    case event
     case staff
     case blog
     case regionSwift
@@ -11,6 +12,7 @@ enum NavigationOptions: String, CaseIterable {
         switch self {
             case .staff: model.navBar.organizer
             case .connpass: "Connpass"
+            case .event: model.event.title
             case .blog: "Blog"
             case .regionSwift: "Region.swift"
         }
@@ -18,7 +20,7 @@ enum NavigationOptions: String, CaseIterable {
 
     func link(model: KanagawaSwiftModel) -> Link {
         switch self {
-            case .staff, .blog, .regionSwift:
+            case .event, .staff, .blog, .regionSwift:
             Link(target: "#\(rawValue)") {
                 Text(title(model: model))
                     .margin(.none)

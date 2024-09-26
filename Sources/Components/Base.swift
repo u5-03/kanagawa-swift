@@ -16,13 +16,14 @@ func base(context: PublishingContext, language: LanguageType ) ->  Group {
                 Text(model.home.description)
                     .font(.title4)
                 Divider()
+                EventsComponent(eventModel: model.event)
+                Divider()
                 OrganizerListComponent(navbar: model.navBar)
                 Divider()
                 BlogsComponent(navbar: model.navBar)
                 Divider()
                 RegionSwiftComponent()
             }
-            .padding(.top, 80)
             .padding(.medium)
         }
     }

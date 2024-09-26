@@ -6,6 +6,8 @@ struct MyTheme: Theme {
         HTML {
             Head(for: page, in: context) {
                 MetaTag(name: "og:image", content: "https://u5-03.github.io/kanagawa-swift/images/regions/kanagawa.png")
+                MetaTag(name: "twitter:title", content: "Kanagawa.swift")
+                MetaTag(name: "twitter:image", content: "https://u5-03.github.io/kanagawa-swift/images/regions/kanagawa.png")
             }
 
             Body {

@@ -7,8 +7,8 @@ enum LanguageType: String {
 
     var flag: String {
         switch self {
-            case .english: "🇺🇸"
-            case .japanese: "🇯🇵"
+            case .english: "🇯🇵"
+            case .japanese: "🇺🇸"
         }
     }
 
