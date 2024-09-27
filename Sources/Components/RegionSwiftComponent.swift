@@ -3,7 +3,7 @@ import Ignite
 
 struct RegionSwiftComponent: Component {
     func body(context: PublishingContext) -> [any PageElement] {
-        Text("Region.swift")
+        Text("\\(region).swift")
             .font(.title2)
             .id(NavigationOptions.regionSwift.rawValue)
         Group {

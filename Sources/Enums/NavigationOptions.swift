@@ -14,7 +14,7 @@ enum NavigationOptions: String, CaseIterable {
             case .connpass: "Connpass"
             case .event: model.event.title
             case .blog: "Blog"
-            case .regionSwift: "Region.swift"
+            case .regionSwift: "\\(region).swift"
         }
     }
 
